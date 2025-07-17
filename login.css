@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body { 
+    background-image: url('login.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;      
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.login-container {
+    width: 350px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 600;
+}
+
+.login-container .input-group {
+    margin-bottom: 25px;
+    position: relative;
+    height: 50px; 
+}
+
+.login-container .input-group label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    padding: 0 5px;
+    background: white; 
+}
+
+.login-container .input-group input {
+    width: 100%;
+    padding: 15px 15px 15px 50px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.login-container .input-group input:focus {
+    border-color: #6e8efb;
+    background: #fff;
+    outline: none;
+}
+
+.login-container .input-group input:focus + label,
+.login-container .input-group input:valid + label {
+    top: -10px; 
+    font-size: 12px;
+    color: #6e8efb;
+}
+
+.login-container .input-group .checkbox-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px; 
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #6e8efb;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px; 
+}
+
+.login-container button:hover {
+    background: #5a75e4;
+}
+
+.login-container .forgot-password {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #6e8efb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-container .forgot-password:hover {
+    color: #5a75e4;
+}
+
+.login-container .signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.login-container .signup-link a {
+    color: #6e8efb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-container .signup-link a:hover {
+    color: #5a75e4;
+}
+
+.login-container select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+}
+
+.login-container select:focus {
+    border-color: #6e8efb;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    margin-top: 10px;
+}

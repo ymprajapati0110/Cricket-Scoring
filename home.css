@@ -1,0 +1,138 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+    color: #ecf0f1;
+}
+
+.welcome-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #e67e22; 
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+h2 {
+    color: #bdc3c7; 
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tab-button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #c0392b; 
+}
+
+.tab-content {
+    display: none;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: left;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0 8px;
+    color: #ecf0f1;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #7f8c8d; 
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #e67e22; 
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e74c3c; 
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c0392b; 
+}
+
+.team-form, .match-setup {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.alert-message {
+    color: #e74c3c; 
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.success-message {
+    color: #27ae60; 
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .tab-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tab-button {
+        width: 100%;
+    }
+}
